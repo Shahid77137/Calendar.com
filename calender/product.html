@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="/Styles/navbar.css">
+    <link rel="stylesheet" href="/Styles/footer.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <div class="nav">
+        <!-- top part -->
+        <div class="nav_top">
+            <div class="savebig">
+                <i id="mbl_ic" class="fa-solid fa-mobile-button"></i> Save BIG with our app! <i
+                    class="fa-solid fa-chevron-down"></i>
+                <div class="save-big-dropdown">
+                    <div>
+                        <p>Get exclusive app deals and discounts, download our app & SAVE</p>
+                        <div class="save-big-container">
+                            <div class="save-big-QR"><img src="images/Dropdown images/android_app.png" alt="" srcset="">
+                            </div>
+                            <div class="app-links">
+                                <div class="save-big-top"><img src="images/Dropdown images/app_store.jpg" alt=""
+                                        srcset=""></div>
+                                <div class="save-big-mid"><img src="images/Dropdown images/google_play.jpg" alt=""
+                                        srcset=""></div>
+                                <div class="save-big-bottom"><img src="images/Dropdown images/google_play.jpg" alt=""
+                                        srcset=""></div>
+                            </div>
+                        </div>
+                        <p>Go to mobile site</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="lang">Language <i class="fa-solid fa-chevron-down"></i>
+                <div class="language-drop-down">
+                    <div>English</div>
+                    <div>Italiano</div>
+                    <div>Deutsch</div>
+                    <div>Español</div>
+                    <div>Français</div>
+                    <div>Português</div>
+                    <div>Slovenčina</div>
+                    <div>Magyar</div>
+                    <div>Slovenščina</div>
+                    <div>Lietuvių kalba</div>
+                    <div>Svenska</div>
+                    <div>Ελληνικά</div>
+                    <div>Dansk</div>
+                    <div>עברית</div>
+                    <div>Hrvatski jezik</div>
+                    <div>Polskie</div>
+                    <div>Limba română</div>
+                    <div>Čeština</div>
+                    <div>Japanese</div>
+                </div>
+            </div>
+            <div class="supp">Support Center <i class="fa-solid fa-chevron-down"></i>
+                <div class="supportdropdown">
+                    <div><i class="fa-brands fa-rocketchat"></i> Live Chat</div>
+                    <div><i class="fa-solid fa-ticket"></i> Ticket</div>
+                    <div><i class="fa-regular fa-circle-question"></i> Help Center</div>
+                </div>
+            </div>
+        </div>
+        <!-- mid part -->
+        <div class="nav_mid">
+            <div class="logo">
+                <h1>
+                    <a href="index.html"><img src="images/logo.jpeg" alt=""></a>
+                </h1>
+            </div>
+            <div class="nav-mid-mid">
+                <div class="bar">
+                    <div class="category">
+                        <div>
+                            <div>All Category</div>
+                            <div><i class="fa-solid fa-caret-down"></i></div>
+                        </div>
+                    </div>
+                    <div class="search"><input type="text" placeholder="Search by Keywords" class="input">
+
+                        <i id="search_ic" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="cate-dropdown" style="display:none">
+                        <div>
+                            <div>All Categories</div>
+                            <div>Smart Home & Garden</div>
+                            <div>Phones & Accessories</div>
+                            <div>Computers, Tablets & Accessories</div>
+                            <div>Wearable Devices</div>
+                            <div>Automobiles & Motorcycles</div>
+                        </div>
+                        <div>
+                            <div>Sports & Outdoors</div>
+                            <div>Consumer Electronics</div>
+                            <div>TV Boxes & Mini PCs</div>
+                            <div>Toys & Hobbies</div>
+                            <div>Security System</div>
+                            <div>Fashion</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="ship_to">
+                <span>Ship to </span>
+                <span><img src="images/india-flag-icon.svg" aslt="" srcset=""></span>
+                <span> / INR </span>
+
+            </div>
+            <div class="signin">
+                <i class="fa-regular fa-user"></i>
+                <p class="sign">Sign In</p>
+                <div class="sign-in-dropdown">
+                    <p>Welcome to Geekbuying</p>
+                    <div class="sign-in-buttons">
+                        <div onclick="tosignup()">Join</div>
+                        <div onclick="tosignin()">Sign In</div>
+                    </div>
+                    <div class="sign-in-icon">
+                        <i id="signin-google-icon" class="fa-brands fa-google"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div class="cart-dropdown">
+                    <p>The Shopping Cart is Empty!</p>
+                </div>
+            </div>
+        </div>
+        <!-- bottom part -->
+        <div class="nav_bottom">
+            <div class="cat">
+
+                <i class="fa-solid fa-bars"></i><span> Categories
+                    <div class="cat-dropdown">
+                        <div>Local Warehouses</div>
+                        <div>Sports and Outdoors</div>
+                        <div>Smart Home and Gardens</div>
+                        <div>Cunsumer Electronics</div>
+                        <div>Generator and portable powers</div>
+                        <div>Computer,table and Accessories</div>
+                        <div>TV boxes and mini PCs</div>
+                        <div>Toys and Hobbies</div>
+                        <div>Phone and Accessories</div>
+                        <div>Automobiles and Motorcycles</div>
+                        <div>Security System</div>
+                        <div>Wearable Device</div>
+                    </div>
+            </div>
+            <div>New</div>
+            <div>Bestselling</div>
+            <div>Brand</div>
+            <div>Clearance</div>
+            <div>Deals</div>
+            <div>Coupon</div>
+            <div>App Only</div>
+            <div><img src="images/gif.gif" alt=""></div>
+
+        </div>
+
+    </div>
+    <!-- Product Details -->
+    <div class="body"> 
+
+        <div class="product">
+            <div class="product-img">
+                <!-- append img here -->
+            </div>
+            <div class="product-discription">
+                <div class="product-name">
+                    <h3>
+                        <!-- Append name Here -->
+                    </h3>
+                </div>
+                <div class="product-price">
+                    <h2>
+                        <!-- Append price here -->
+                    </h2>
+                </div>
+                <div class="product-container">
+                    <div class="product-ship-from">
+                        <div class="product-label">
+                            Ship from:
+                        </div>
+                        <div class="china-buttom">
+                            China
+                        </div>
+                    </div>
+                    <div class="product-quantity">
+                        <div class="product-label">
+                            QTY:
+                        </div>
+                        <div>
+                            <div onclick="qtyminus()">-</div>
+                            <div class="product-qty">1</div>
+                            <div onclick="qtyplus()">+</div>
+                        </div>
+                    </div>
+                    <div class="product-shipping">
+                        <div class="product-label">
+                            Shipping:
+                        </div>
+                        <div class="product-label">
+                            Estimated Shipping Time:15-45 business days
+                        </div>
+                    </div>
+                    <div class="product-button">
+                        <div class="add-to-cart">
+                            Add to Cart
+                        </div>
+                        <div class="buy-now">
+                            Buy Now
+                        </div>
+                    </div>
+                    <div class="product-payment">
+                        <div class="product-label">
+                            Payment:
+                        </div>
+                        <div class="product-paypal">
+                            <img src="/images/product page/paypal-seeklogo.com.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="product-advantage">
+                        <div><i class="fa-solid fa-comment-dollar"></i> Price match</div>
+                        <div><i class="fa-regular fa-circle-down"></i> Dropshipping download</div>
+                        <div>
+                            <i class="fa-solid fa-comment-dollar"></i></i> Bulk orders Rebate
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/images/product page//logos.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- You can also buy section  -->
+    <div class="recommended">
+        <div class="recommended-header">
+            You may also like
+        </div>
+        <div class="recommended-container">
+            <!-- append recommended here -->
+        </div>
+    </div>
+
+
+    <!-- Discription -->
+    <div class="discription">
+        <h2>
+            Highlights
+        </h2>
+        <ol>
+            <li>60W effect unique spot compression laser: S6 pro uses the latest 5.5W diode spot compression laser. It has an ultra-fine square laser focus, and has twice cutting penetration and accuracy of ordinary lasers. Even in the field of spot compression lasers, S6 pro has thinner engraving marks and stronger cutting and penetration capabilities. It can cut 10mm thick wooden boards and engrave ceramics and metals, which is almost beyond the effect of a 60W CO2 laser.</li>
+            <li>Fast focusing design: S6 has the fastest focus design on the market. The S6 laser combines a fixed focus lens and a sliding design. You only need to slide the laser and tighten the screws to complete the focusing. This makes it very easy to use the laser .</li>
+            <li> Solid and easy-assembly structure design: The full-metal structure design makes the machine extremely solid, and it improves the accuracy of engraving. The whole structure is designed for easy-assembly, and the assembly can be completed in 10-20 minutes. The structural frame is very durable and remains open to upgrade. During use, you can keep the frame and replace with other new lasers. Or replace longer metal beams to expand the engraving area.</li>
+            <li> New eye protection design: The laser filter cover filters 98% of the ultraviolet light to the eyes. You and the people around you can watch laser engraving without wearing goggles. At the same time it can prevent animals from catching the laser spot.</li>
+            <li> Wide compatibility: The machine is compatible with various mature engraving software, such as LaserGRBL, LightBurn, Benbox, GrblController, LiteFire, supports PWM mode engraving, supports Windows system, MAC system (LightBurn), and engraving file format Support JPG, PNG, DXF, AI, SVG, G-code, NC, BMP, etc.</li>
+            <li>Safe design: The machine is equipped with a very convenient power switch, which is not available in other homes. Fixing holes are reserved on the four feet and the body structure to facilitate fixing the machine and the data cable.</li>
+            <li>A4 steel pad: The free A4 size steel pad can protect the table from laser damage. Isolate fire hazards.</li>
+            <li> Right-angle measuring ruler: X-axis and Y-axis contain precise scale lines, which is convenient for you to measure the size of engraving objects quickly. The 410x420mm large-area engraving interval can meet your various engraving needs.</li>
+        </ol>
+    </div>
+
+    <!-- Specification -->
+    <div class="specification">
+        <h2>
+            Specification
+        </h2>
+        <table>
+            <tr>
+                <td>General</td>
+                <td>
+                    <ul>
+                        <li>Brand: SCULPFUN</li>
+                        <li>Type: Laser Engraver</li>
+                        <li>Model: S6 Pro</li>
+                        <li>Color: Silver</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Specification</td>
+                <td>
+                    <ul>
+                        <li>Engraving size: 410 x 420mm</li>
+                        <li>Engraving/cutting material:</li>
+                        <li>Engraving materials: wood, paper, cardboard, plastic, white, PCB board, aluminum oxide, black-painted metal, dark ceramic</li>
+                        <li>Cutting material: 6mm wood& acrylic, cardboard,  fabric, bamboo, plastic board;</li>
+                        <li>Laser effect power: 60W (cutting effect compared to 60W CO2 laser)</li>
+                        <li>Max Machine Electricity Power: 30W   (It has nothing to do with cutting or engraving performance,just electricity consumes)</li>
+                        <li>Diode laser power: 5.5-6W  (Please note that this is light energy and not electric energy)</li>
+                        <li>Laser wave length 455±5nm</li>
+                        <li>Engraving accuracy: 0.01mm</li>
+                        <li>Focusing method: fixed focus laser + sliding device</li>
+                        <li>Laser protective cover: The light filter cover on the laser protects the user's eyes and prevents animals grabing the laser spot.</li>
+                        <li>Operating software: LaserGRBL, LightBurn, LaserGRBL, LightBurn, Benbox, GrblController, LiteFire, support Windows system, support</li>
+                        <li>MAC system. Supported file formats NC, BMP, JPG, PNG, DXF and other image formats.</li>
+                        <li>Data transmission method: USB connection</li>
+                        <li>Power supply: International universal standard power input: 100-240V AC, 50/60HZ output: 12V 5A</li>
+                        <li>Certification: CE FCC RoHS FDA IEC</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Weight & Size</td>
+                <td>
+                    <ul>
+                        <li>Product Weight: 3.0Kg</li>
+                        <li>Package Weight: 4.4Kg</li>
+                        <li>Package Size(L x W x H): 61.5 x 34.5 x 13cm</li>
+                        
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Package Contents</td>
+                <td>
+                    <ul>
+                        <li>1 × X axis assembly</li>
+                        <li>2 × X shaft</li>
+                        <li>2 × Y shaft</li>
+                        <li>1 × control box module set</li>
+                        <li>3 × support feet</li>
+                        <li>1 × laser module set</li>
+                        <li>1 × 12V 5A power adapter</li>
+                        <li>1 × power adapter</li>
+                        <li>1 ×USB cable</li>
+                        <li>Step 1~5 Screw installation package</li>
+                        <li>2 × belt</li>
+                        <li>1 × T-shaped M5 screwdriver</li>
+                        <li>1 × L-shaped M4 screwdriver</li>
+                        <li>1 × L-shaped M3 screwdriver</li>
+                        <li>10 × Tie</li>
+                        <li>1 × 8-10mm nut wrench</li>
+                        <li>1 × brush</li>
+                        <li>1 × Laser goggles</li>
+                        <li>2 × 10 x 10cm  wood chip 3mm thickness</li>
+                        <li>1 × A4 size steel desktop protection pad</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="foot-dropdown-div">
+            <div class="top-foot-ad">
+                <span>Why buy from Geekbuying</span>
+                <span>+</span>
+            </div>
+            <div class="foot-dropdown" style="display: none;">
+                <div>
+                    <div>
+                        <i class="fa-solid fa-percent"></i>
+                    </div>
+                    <strong>Amazing Offers</strong>
+                    <div>Find best offers for smart gadgets at one place.</div>
+                </div>
+                <div>
+                    <div>
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <strong>Easy & secure payments</strong>
+                    <div>Pay directly via PayPal or Klarna among other payment options.</div>
+                </div>
+                <div>
+                    <div>
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <strong>Local stock & fast shipping</strong>
+                    <div>Buy from local stock and ship within 48-hour.</div>
+                </div>
+                <div>
+                    <div>
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <strong>Customer support</strong>
+                    <div>24-hour customer support for all your queries.</div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe">
+            <div>
+                <input type="text" placeholder="Enter email to get 5% off coupon">
+                <input type="Submit" value="Subscribe">
+            </div>
+        </div>
+        <div class="mid-footer">
+            <div class="mid-left-footer">
+                <div>
+                    <span><strong>Help</strong></span>
+                    <span>Order Status</span>
+                    <span>About us</span>
+                    <span>Contact us</span>
+                    <span>Warranty</span>
+                    <span>FAQs</span>
+                    <span>Sitemap</span>
+                </div>
+                <div>
+                    <span><strong>Support</strong></span>
+                    <span>WhatGeek</span>
+                    <span>Shipping guide</span>
+                    <span>Payment information</span>
+                    <span>Wholesale</span>
+                    <span>Drop Shipping</span>
+                    <span>Blog</span>
+                    <span>Affiliates</span>
+                </div>
+                <div>
+                    <span><strong>Policies</strong></span>
+                    <span>Terms and Conditions</span>
+                    <span>Return policies</span>
+                    <span>Privacy</span>
+                    <span>Declaration</span>
+                    <span>Customs</span>
+                </div>
+            </div>
+            <div class="mid-right-footer">
+                <div class="mid-right-upper-footer">
+                    <div>
+                        <div><img src="images/Dropdown images/android_app.png" alt="" srcset="">
+                        </div>
+                        <div>
+                            <div><img src="images/Dropdown images/app_store.jpg" alt="" srcset=""></div>
+                            <div><img src="images/Dropdown images/google_play.jpg" alt="" srcset=""></div>
+                            <div><img src="images/Dropdown images/google_play.jpg" alt="" srcset=""></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div><i class="fa-brands fa-rocketchat"></i> Live Chat</div>
+                        <div><i class="fa-solid fa-ticket"></i> Ticket</div>
+                        <div><i class="fa-regular fa-circle-question"></i> Help Center</div>
+                    </div>
+                </div>
+                <div class="mid-right-bottom-footer">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        <div class="popular-search">
+            <div class="label-popular">
+                <strong>Popular Searches</strong>
+            </div>
+            <div class="popular-search-content">
+                <span>Geekbuying Coupon</span>
+                <span>Roborock S7 Pro Ultra</span>
+                <span>Tronsmart Bluetooth Speakers</span>
+                <span>Windows Mini PC</span>
+                <span>ENGWE X26</span>
+                <span>android tv boxes</span>
+                <span>KugooKirin G2 Pro</span><br>
+                <span>Portable Power Station</span>
+                <span>LDS Robot Vacuum</span>
+                <span>Electric Bike</span>
+            </div>
+        </div>
+        <div class="footer-img">
+            <img src="/images/footer.png" alt="">
+        </div>
+        <div class="footer-copyright">Copyright © 2012-2022 GeekBuying.com. All rights reserved.</div>
+        <div></div>
+    </div>
+</body>
+</html>
+
+
+<script src="product.js"></script>
